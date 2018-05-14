@@ -15,10 +15,10 @@ type ParallelBook struct {
 	Title2  xml.Attr `xml:"title2,attr"`
 	Info2   xml.Attr `xml:"info2,attr"`
 	Info    xml.Attr `xml:"info,attr"`
-	Tags    []Tag    `xml:"p"`
+	Pairs   []Pair   `xml:"p"`
 }
 
-type Tag struct {
+type Pair struct {
 	Level     string `xml:"l,attr"`
 	Source    string `xml:"s,attr"`
 	Translate string `xml:"t,attr"`
